@@ -1,3 +1,23 @@
-model:
-  name: nemotron-8b-finance
-  url: http://localhost:8001/v1
+team:
+  id: team-2
+  name: Team 2
+  github_url: https://github.com/gum5o/Team2-Nemotron
+
+models:
+  # Reasoning / orchestrator model (route, analyze, combine nodes in agent.py) --
+  # organizer-supplied base model, unchanged.
+  reasoning:
+    name: Qwen/Qwen3.6-35B-A3B-Instruct-FP8
+    url: http://localhost:8000/v1
+
+  # Team fine-tuned domain model, used by tools.afr_sentiment() for AFR
+  # article sentiment/market-direction classification.
+  finance:
+    name: nemotron-8b-finance
+    url: http://localhost:8001/v1
+
+  # Local embedding model for the FAISS semantic_search layer (datastore.py).
+  # Loaded in-process via sentence-transformers/HuggingFaceEmbeddings, not
+  # served behind an HTTP endpoint.
+  embedding:
+    name: BAAI/bge-small-en-v1.5
