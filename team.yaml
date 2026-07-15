@@ -1,0 +1,3 @@
+model:
+  name: nemotron-8b-finance
+  url: http://localhost:8001/v1

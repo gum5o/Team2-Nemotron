@@ -1,0 +1,3 @@
+python run_batch.py public_questions.jsonl -o answers.jsonl
+python score_check.py > scorecard.txt
+type scorecard.txt

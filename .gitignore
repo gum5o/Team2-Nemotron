@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+*.log
+
+# Local copies of the organizer-supplied datasets and derived build
+# artifacts -- not part of the submission, regenerable from the approved
+# local dataset paths (see agent/tools.py's _find_files / agent/datastore.py).
+agent/data/
+agent/data_full/
+agent/afr_index_full/

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "team_id": "team-2",
+  "team_name": "Team 2",
+  "github_url": "TODO: fill in once pushed to GitHub",
+  "commit_sha": "TODO: fill in with the judged commit's SHA",
+  "agent": {
+    "endpoint": "TODO: fill in once the agent is served behind a public endpoint",
+    "health_path": "/health",
+    "query_path": "/query",
+    "timeout_seconds": 300
+  },
+  "model": {
+    "endpoint": "http://localhost:8001/v1",
+    "model_name": "nemotron-8b-finance"
+  }
+}
