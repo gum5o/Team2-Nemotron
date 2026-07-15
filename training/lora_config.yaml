@@ -1,0 +1,44 @@
+# LoRA fine-tuning configuration for Llama-3.1-Nemotron-Nano-8B-v1.
+#
+# Starting point is the event's reference baseline (rank 32, seq_len 512,
+# lr 5e-5, 100 steps -- 1e-4 is documented to cause a loss spike after
+# warmup). Adjusted only where the reference NeMo Customizer path wasn't
+# reachable in this environment (no Customizer service running, no docker
+# permission to pull nvcr.io/nvidia/nemo:25.09) and we instead run LoRA
+# directly via Hugging Face transformers + peft (see train_lora.py).
+
+base_model_path: /home/cognitivo/local-llm-setup/models/Llama-3.1-Nemotron-Nano-8B-v1
+output_dir: training/output/nemotron-sentiment-lora
+
+train_file: training/data/lora/train.jsonl
+val_file: training/data/lora/val.jsonl
+
+# LoRA hyperparameters
+lora_rank: 32
+lora_alpha: 64          # 2x rank, standard convention
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+# Training hyperparameters (reference baseline)
+sequence_length: 512
+learning_rate: 5.0e-5
+max_steps: 100
+checkpoint_every: 20   # reference: step-20 checkpoint already shows meaningful improvement
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4   # effective batch size 8
+warmup_ratio: 0.03
+weight_decay: 0.0
+seed: 0
+
+# Memory footprint controls (GB10 unified-memory box shared with two live
+# vLLM servers -- see logs/gpu_memory_notes.md for the measured headroom).
+load_in_4bit: true       # QLoRA: quantize frozen base weights to fit shared memory headroom
+bf16: true
+gradient_checkpointing: true

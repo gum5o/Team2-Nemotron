@@ -1,0 +1,1002 @@
+{
+  "val_set_size": 58,
+  "val_sentiment_bucket_agreement_with_teacher_label": {
+    "base_model": "36/58",
+    "fine_tuned_model": "45/58"
+  },
+  "val_results": [
+    {
+      "headline": "Article headline: Schwartz checks out at IGA site",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in IGA supermarket shares or related sector",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in IGA supermarket shares or related sector."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for IGA and property sector",
+        "raw": "Sentiment: positive\nLikely direction: bullish for IGA and property sector"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Westpac's tech initiative milestone",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upward for Westpac Banking Corporation shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upward for Westpac Banking Corporation shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Westpac shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Westpac shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: 'Misled' on energy, Abbott claims",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in renewable energy sector shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in renewable energy sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for renewable energy and utilities",
+        "raw": "Sentiment: negative\nLikely direction: bearish for renewable energy and utilities"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Witness pair gives bank a big break",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Neutral (for Westpac) or Positive (for the financial sector, as the case's resolution in favor of the bank may indicate a favorable regulatory environment for other institutions)",
+        "raw": "Sentiment: Positive\nLikely direction: Neutral (for Westpac) or Positive (for the financial sector, as the case's resolution in favor of the bank may indicate a favorable regulatory environment for other institutions)"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "Westpac shares likely to rise",
+        "raw": "Sentiment: positive\nLikely direction: Westpac shares likely to rise"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: PM lifts refugee intake by one third indefinitely",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in RBA cash rate target expectations",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in RBA cash rate target expectations"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for domestic-focused equities and property trusts",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for domestic-focused equities and property trusts"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Genworth cancels earnings guidance",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in Genworth's shares or the relevant sector",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in Genworth's shares or the relevant sector."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Genworth shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Genworth shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Television fight over ratings crown ignores shift to digital",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Uncertain for the TV broadcasting sector, as the shift to digital is not yet reflected in the traditional ratings",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Uncertain for the TV broadcasting sector, as the shift to digital is not yet reflected in the traditional ratings."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for traditional TV networks",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for traditional TV networks"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Charter Hall in Healthscope mix as management goes global",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upward for Healthscope shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upward for Healthscope shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Healthscope shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Healthscope shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Primary's new CEO, board turn to UBS for strategic advice",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Uplick in Primary Health Care shares or sector",
+        "raw": "Sentiment: Positive\nLikely direction: Uplick in Primary Health Care shares or sector"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Primary Health Care shares",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Primary Health Care shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Fed on hold after poor jobs data",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "US dollar and Australian dollar to rise, US stocks to decline",
+        "raw": "Sentiment: Negative\nLikely direction: US dollar and Australian dollar to rise, US stocks to decline."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for rate-sensitive sectors and equities",
+        "raw": "Sentiment: negative\nLikely direction: bearish for rate-sensitive sectors and equities"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: IMF forecasts a softer hit to economy",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Interest rate expectations stable, but shares in affected sectors may decline",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Interest rate expectations stable, but shares in affected sectors may decline."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for rate-sensitive sectors and equities",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for rate-sensitive sectors and equities"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Will unexpected turbulence threaten Qantas' stable trajectory?",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Qantas shares may decline due to industry risks",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Qantas shares may decline due to industry risks."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "Qantas shares face pressure from Cathay Pacific and Air New Zealand turmoil",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: Qantas shares face pressure from Cathay Pacific and Air New Zealand turmoil"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: TOUGH DECISION ON NBN FOR MR BROADBAND",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in NBN shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in NBN shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for NBN shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for NBN shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Top fund managers back new platform",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in the shares of fund managers' related companies or the financial sector",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in the shares of fund managers' related companies or the financial sector."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for managed funds and fintech sector",
+        "raw": "Sentiment: positive\nLikely direction: bullish for managed funds and fintech sector"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Tracking shoppers: GPT turns pings into purchases",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "GPT Group's shares or the relevant sector likely to see continued growth due to the successful implementation of big data analytics in their malls",
+        "raw": "Sentiment: Positive\nLikely direction: GPT Group's shares or the relevant sector likely to see continued growth due to the successful implementation of big data analytics in their malls."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for GPT Group shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for GPT Group shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Digital highway bypasses stockmarkets",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Decline in free-to-air television sector shares",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Decline in free-to-air television sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Australian media and consumer discretionary sectors",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Australian media and consumer discretionary sectors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Qantas threatens to reduce US flights",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Uncertain for Qantas shares, potentially negative for airline sector if Qantas is unable to secure the tie-up",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Uncertain for Qantas shares, potentially negative for airline sector if Qantas is unable to secure the tie-up."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Qantas shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Qantas shares"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Coleman lauds liability and open data",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increased pressure on banks to improve governance",
+        "raw": "Sentiment: Positive\nLikely direction: Increased pressure on banks to improve governance."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "supportive for bank regulation and competition policy",
+        "raw": "Sentiment: positive\nLikely direction: supportive for bank regulation and competition policy"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Tax-loss selling another risk for the ASX dogs",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Potential decrease in the relevant shares or sector, particularly in the top 200 ASX-listed companies",
+        "raw": "Sentiment: Negative\nLikely direction: Potential decrease in the relevant shares or sector, particularly in the top 200 ASX-listed companies."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "downward pressure on top 200 stocks",
+        "raw": "Sentiment: negative\nLikely direction: downward pressure on top 200 stocks"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: MARKET MASTERS IN THE BARGAIN BIN",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in ASX-listed funds managed by market masters",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in ASX-listed funds managed by market masters\n\n(The article presents a negative view of the ASX-listed funds managed by market masters, as it suggests that these funds have large discounts to their asset value, which may deter new investors. This negative sentiment could lead to a decline in the"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for ASX-listed funds and LICs",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for ASX-listed funds and LICs"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Facebook tipped to soar as TV stagnates",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Soar",
+        "raw": "Sentiment: Positive\nLikely direction: Soar"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "Facebook shares likely to rise",
+        "raw": "Sentiment: positive\nLikely direction: Facebook shares likely to rise"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Big super flexes its muscles",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Positive for sector related to environmental, social, and governance (ESG) factors, such as renewable energy or sustainable mining",
+        "raw": "Sentiment: Positive\nLikely direction: Positive for sector related to environmental, social, and governance (ESG) factors, such as renewable energy or sustainable mining."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for banks and financial services",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for banks and financial services"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Apartment resale platform Aofun.com.au launches",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Boost in Australian property resale sector",
+        "raw": "Sentiment: Positive\nLikely direction: Boost in Australian property resale sector"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Australian property and REITs",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Australian property and REITs"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Encourage investment by levelling the imputation playing field",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Decrease in Australian stocks due to potential tax reforms",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Decrease in Australian stocks due to potential tax reforms."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Australian equities due to tax reform uncertainty",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Australian equities due to tax reform uncertainty"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Teneo advising BHP on Brazil's Samarco disaster",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Neutral",
+        "direction": "Uncertain for BHP Billiton, but potentially positive for Teneo Holdings if the relationship with BHP is successful",
+        "raw": "Sentiment: Neutral\nLikely direction: Uncertain for BHP Billiton, but potentially positive for Teneo Holdings if the relationship with BHP is successful."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for BHP Billiton shares",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for BHP Billiton shares"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: ACCC criminal case alleges broad cartel",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in healthcare equipment shares or sector",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in healthcare equipment shares or sector."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Country Care Group shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Country Care Group shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Australia 'can't avoid methane deal effects'",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in shares of Australian methane emitters and related sectors",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in shares of Australian methane emitters and related sectors."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Australian industry and energy sector",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Australian industry and energy sector"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: AMP, CBA, Westpac face fresh threat",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in financial institution shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in financial institution shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "downward pressure on AMP, CBA, and Westpac shares",
+        "raw": "Sentiment: negative\nLikely direction: downward pressure on AMP, CBA, and Westpac shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Lang Hancock Mining 1950s -1990s",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in iron ore prices and shares of mining companies involved",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in iron ore prices and shares of mining companies involved."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for iron ore and mining stocks",
+        "raw": "Sentiment: positive\nLikely direction: bullish for iron ore and mining stocks"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: New $350m fund float hopes for a happy new year",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Rising for credit funds and related sector shares",
+        "raw": "Sentiment: Positive\nLikely direction: Rising for credit funds and related sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for credit-focused equities and funds",
+        "raw": "Sentiment: positive\nLikely direction: bullish for credit-focused equities and funds"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Top earners have to wait for taxcuts",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in low-to-middle-income shares, potential decrease in high-income shares due to tax cuts",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in low-to-middle-income shares, potential decrease in high-income shares due to tax cuts."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for high-income earners and high-income stocks",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for high-income earners and high-income stocks"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Perth-based GenusPlus taps two brokers for $150m IPO",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upward for GenusPlus shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upward for GenusPlus shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for GenusPlus shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for GenusPlus shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: New ministry mixes stability with an eye to re-election",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upswing in Australian financial sector shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upswing in Australian financial sector shares."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for energy and climate-sensitive sectors",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for energy and climate-sensitive sectors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Credit Suisse buys Perth tower for $64m",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upslope in Perth's office property sector shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upslope in Perth's office property sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Perth commercial property and REIM equities",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Perth commercial property and REIM equities"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Industry Insight",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Neutral",
+        "direction": "Uncertain, as the article focuses on the role of boards rather than directly addressing financial market conditions",
+        "raw": "Sentiment: Neutral\nLikely direction: Uncertain, as the article focuses on the role of boards rather than directly addressing financial market conditions."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "cautious outlook for corporate governance and risk management",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: cautious outlook for corporate governance and risk management"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Disruptor disrupted: Auditor warns on BuyMyplace future",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in real estate disruptor shares or sector",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in real estate disruptor shares or sector."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for BuyMyplace shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for BuyMyplace shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Turnbull skips crucial apprenticeship",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in shares of companies related to economic reform, such as those in the banking sector",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in shares of companies related to economic reform, such as those in the banking sector."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for rate-sensitive sectors and equities",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for rate-sensitive sectors and equities"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Cap rate compression working for TIX",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in share price",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in share price"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for TIX shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for TIX shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: BHP must justify its 'unusual' exposure to oil: chairman",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Neutral to positive for BHP shares, as the chairman remains committed to the sector, but there is an underlying concern about the company's unconventional oil and gas assets",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Neutral to positive for BHP shares, as the chairman remains committed to the sector, but there is an underlying concern about the company's unconventional oil and gas assets."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "BHP shares face pressure to divest oil assets",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: BHP shares face pressure to divest oil assets"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: THE AUTOMATION MYTH",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Down for Automation and Robotics sector shares",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Down for Automation and Robotics sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for employment and automation-related sectors",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for employment and automation-related sectors"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: NSW Ports monopoly to last 50 years: Sims",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in shares of Port of Newcastle and related sector",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in shares of Port of Newcastle and related sector."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for NSW Ports and infrastructure sector",
+        "raw": "Sentiment: negative\nLikely direction: bearish for NSW Ports and infrastructure sector"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: THE ESSENTIAL MRS MERKEL",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Neutral (as the article focuses on Merkel's political success, not directly on financial markets)",
+        "raw": "Sentiment: Positive\nLikely direction: Neutral (as the article focuses on Merkel's political success, not directly on financial markets)"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for German banks and insurance",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for German banks and insurance"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Cover-More investors question Travelex deal due diligence",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in Cover-More shares or similar sector shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in Cover-More shares or similar sector shares"
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Cover-More Group shares",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Cover-More Group shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Foxtel has lower fee message for Disney, NBCUniversal",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Potential decline in Foxtel's share price due to increased competition from SVOD services",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Potential decline in Foxtel's share price due to increased competition from SVOD services."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Foxtel shares",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Foxtel shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Call for tougher penalties to stop trade secret theft",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Neutral",
+        "direction": "Uncertain for tech and defense sectors, but potentially positive for companies with strong IP protection",
+        "raw": "Sentiment: Neutral\nLikely direction: Uncertain for tech and defense sectors, but potentially positive for companies with strong IP protection."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Australian tech and IP-sensitive sectors",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Australian tech and IP-sensitive sectors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Hopes for income tax cuts fade as wages growth slows",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in financial stocks, particularly those sensitive to tax policy changes",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in financial stocks, particularly those sensitive to tax policy changes."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for rate-sensitive sectors and equities",
+        "raw": "Sentiment: negative\nLikely direction: bearish for rate-sensitive sectors and equities"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: It's a sorry sight when Fed chiefs turn traders",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Market downturn or correction",
+        "raw": "Sentiment: Negative\nLikely direction: Market downturn or correction"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for equities and rate-sensitive sectors",
+        "raw": "Sentiment: negative\nLikely direction: bearish for equities and rate-sensitive sectors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: MARCO POLO",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upward for Fresnillo shares",
+        "raw": "Sentiment: Positive\nLikely direction: Upward for Fresnillo shares"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Fresnillo shares",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Fresnillo shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: PNG seeks $1.5 billion in loans from Australia, dropping China debt plan",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Mixed with a negative bias",
+        "direction": "Uncertain for Australian dollar, possibly positive for PNG's financial institutions",
+        "raw": "Sentiment: Mixed with a negative bias\nLikely direction: Uncertain for Australian dollar, possibly positive for PNG's financial institutions."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for Australian dollar and equities",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for Australian dollar and equities"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Virus has SE Asian economies gasping",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in travel and tourism sector shares, potential stimulus measures in some countries",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in travel and tourism sector shares, potential stimulus measures in some countries."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Southeast Asian equities and tourism-related sectors",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Southeast Asian equities and tourism-related sectors"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Property market is gripped by FOOP",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Further decline in property prices",
+        "raw": "Sentiment: Negative\nLikely direction: Further decline in property prices"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for residential property and REITs",
+        "raw": "Sentiment: negative\nLikely direction: bearish for residential property and REITs"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: UK-Australia FTA could include visa-free travel",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Increase in Australian and UK tourism, possibly with a slight increase in trade-related shares",
+        "raw": "Sentiment: Positive\nLikely direction: Increase in Australian and UK tourism, possibly with a slight increase in trade-related shares."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for Australian dollar and UK/Australian equities",
+        "raw": "Sentiment: positive\nLikely direction: bullish for Australian dollar and UK/Australian equities"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Payroll data shows job losses slowing",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Up in employment sector shares, such as ASX Limited",
+        "raw": "Sentiment: Positive\nLikely direction: Up in employment sector shares, such as ASX Limited."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "supportive for employment and wage growth",
+        "raw": "Sentiment: positive\nLikely direction: supportive for employment and wage growth"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: ACCC to let Woolworths swallow PFD",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in PFD Food Services shares, potential increase in Woolworths shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in PFD Food Services shares, potential increase in Woolworths shares."
+      },
+      "finetuned_output": {
+        "sentiment": "mixed with a negative bias",
+        "direction": "bearish for food and grocery suppliers and distributors",
+        "raw": "Sentiment: mixed with a negative bias\nLikely direction: bearish for food and grocery suppliers and distributors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: FlexiGroup hit on CEO change",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in FlexiGroup's shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in FlexiGroup's shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for FlexiGroup shares",
+        "raw": "Sentiment: negative\nLikely direction: bearish for FlexiGroup shares"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline: Security risks no judge of Chinese investment",
+      "expected_bucket": "mixed",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in Chinese investment in Australia",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in Chinese investment in Australia"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for Australian equities and trade-sensitive sectors",
+        "raw": "Sentiment: negative\nLikely direction: bearish for Australian equities and trade-sensitive sectors"
+      },
+      "base_matches_teacher_bucket": false,
+      "finetuned_matches_teacher_bucket": false
+    },
+    {
+      "headline": "Article headline: Economy bounces out of recession",
+      "expected_bucket": "positive",
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Rise in relevant shares or sector",
+        "raw": "Sentiment: Positive\nLikely direction: Rise in relevant shares or sector"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for banks, property trusts, and consumer discretionary stocks",
+        "raw": "Sentiment: positive\nLikely direction: bullish for banks, property trusts, and consumer discretionary stocks"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    },
+    {
+      "headline": "Article headline:  Citadel under siege as shares take hammering",
+      "expected_bucket": "negative",
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decline in Citadel Group shares",
+        "raw": "Sentiment: Negative\nLikely direction: Decline in Citadel Group shares"
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "Citadel shares face downward pressure",
+        "raw": "Sentiment: negative\nLikely direction: Citadel shares face downward pressure"
+      },
+      "base_matches_teacher_bucket": true,
+      "finetuned_matches_teacher_bucket": true
+    }
+  ],
+  "calibration_article_results": [
+    {
+      "id": "MHQ058",
+      "headline": "Travel stocks take off on vaccine rollout",
+      "rba_target_pct": 0.1,
+      "expected_facts": [
+        "RBA cash-rate target 0.10%",
+        "sentiment is positive",
+        "likely direction for ASX travel shares is upward"
+      ],
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Up in travel stocks; potentially mixed with a negative bias if considering broader market volatility",
+        "raw": "Sentiment: Positive\nLikely direction: Up in travel stocks; potentially mixed with a negative bias if considering broader market volatility."
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for travel stocks",
+        "raw": "Sentiment: positive\nLikely direction: bullish for travel stocks"
+      }
+    },
+    {
+      "id": "MHQ067",
+      "headline": "Why investors don't believe the RBA on interest rates",
+      "rba_target_pct": 0.1,
+      "expected_facts": [
+        "RBA cash-rate target 0.10%",
+        "sentiment is mixed with a negative bias",
+        "broad ASX direction is mixed-to-down",
+        "rate-sensitive shares under pressure"
+      ],
+      "base_output": {
+        "sentiment": "Negative",
+        "direction": "Decrease in investor confidence in RBA, potentially leading to a short-term volatility in the Australian stock market",
+        "raw": "Sentiment: Negative\nLikely direction: Decrease in investor confidence in RBA, potentially leading to a short-term volatility in the Australian stock market."
+      },
+      "finetuned_output": {
+        "sentiment": "negative",
+        "direction": "bearish for rate-sensitive sectors and property trusts",
+        "raw": "Sentiment: negative\nLikely direction: bearish for rate-sensitive sectors and property trusts"
+      }
+    },
+    {
+      "id": "MHQ080",
+      "headline": "Energy stocks shine as vaccines fuel oil rally",
+      "rba_target_pct": 0.1,
+      "expected_facts": [
+        "RBA cash-rate target 0.10%",
+        "article sentiment is positive",
+        "likely direction for ASX energy shares is upward",
+        "non-Tabcorp basket rose 2.37% from 30 Nov to 7 Dec 2020",
+        "five-session move confirmed the inferred upward direction"
+      ],
+      "base_output": {
+        "sentiment": "Positive",
+        "direction": "Upward for energy stocks",
+        "raw": "Sentiment: Positive\nLikely direction: Upward for energy stocks"
+      },
+      "finetuned_output": {
+        "sentiment": "positive",
+        "direction": "bullish for energy stocks",
+        "raw": "Sentiment: positive\nLikely direction: bullish for energy stocks"
+      }
+    }
+  ]
+}

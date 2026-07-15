@@ -1,0 +1,547 @@
+{
+  "estimated_total": 66,
+  "max_possible": 150,
+  "results": [
+    {
+      "id": "MHQ001",
+      "difficulty": "easy",
+      "datasets": [
+        "RBA"
+      ],
+      "prompt": "From the first RBA record to the last, how many cash-rate decisions changed the rate, and how many were increases versus decreases?",
+      "answer": "From the first RBA record (effective 2010-02-03) to the last (effective 2026-06-17), there were 41 cash-rate decisions that changed the rate. Of these, 20 were increases and 21 were decreases.",
+      "steps": 2,
+      "elapsed_s": 7.0,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "41 decisions changed the rate",
+          "points": 4,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "20 increases",
+          "points": 3,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "21 decreases",
+          "points": 3,
+          "heuristic_hit": true
+        }
+      ]
+    },
+    {
+      "id": "MHQ035",
+      "difficulty": "medium",
+      "datasets": [
+        "RBA"
+      ],
+      "prompt": "Across the 2011-2013 easing period, how many cuts occurred and how far did the target fall?",
+      "answer": "During the 2011-2013 easing period, there were 8 RBA cash-rate cuts. The target rate fell from 4.75% to 2.50%, a total decline of 2.25 percentage points (225 basis points). The cuts occurred on the following dates: 2 Nov 2011 (-0.25%), 7 Dec 2011 (-0.25%), 2 May 2012 (-0.50%), 6 Jun 2012 (-0.25%), 3 Oct 2012 (-0.25%), 5 Dec 2012 (-0.25%), 8 May 2013 (-0.25%), and 7 Aug 2013 (-0.25%).",
+      "steps": 3,
+      "elapsed_s": 18.1,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "8 cuts total",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "2 cuts in 2011",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "4 cuts in 2012",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "2 cuts in 2013",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "total fall of -2.25 percentage points",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "starting target 4.75%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "ending target 2.50%",
+          "points": 2,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ040",
+      "difficulty": "easy",
+      "datasets": [
+        "ASX"
+      ],
+      "prompt": "What are the dimensions and common date range of the ASX dataset?",
+      "answer": "The ASX dataset contains 18 companies (tickers: AGL, AMP, ANZ, Aurizon, BHP, CBA, Cromwell, GPT, IAG, NAB, QBE, Qantas, Rio, Stockland, Suncorp, TPG, Tabcorp, Transurban). Each ticker has 1,774 rows of daily price data. The common date range spans from 2015-01-02 to 2021-12-30.",
+      "steps": 2,
+      "elapsed_s": 9.2,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "18 tickers or ticker files",
+          "points": 3,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "1,774 rows per ticker",
+          "points": 4,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "date range 2 Jan 2015 to 30 Dec 2021",
+          "points": 3,
+          "heuristic_hit": true
+        }
+      ]
+    },
+    {
+      "id": "MHQ045",
+      "difficulty": "medium",
+      "datasets": [
+        "ASX"
+      ],
+      "prompt": "Excluding Tabcorp, which ticker had the best and worst 2018 return?",
+      "answer": "Excluding Tabcorp, the ticker with the best 2018 return was BHP with a return of 22.17%, and the ticker with the worst 2018 return was AMP with a return of -50.04%.",
+      "steps": 3,
+      "elapsed_s": 13.9,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "BHP.AX best 2018 return",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "best return +22.17%",
+          "points": 3,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "AMP.AX worst 2018 return",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "worst return -50.04%",
+          "points": 3,
+          "heuristic_hit": true
+        }
+      ]
+    },
+    {
+      "id": "MHQ049",
+      "difficulty": "medium",
+      "datasets": [
+        "ASX"
+      ],
+      "prompt": "Excluding Tabcorp, which ticker has the highest average daily volume over the full sample?",
+      "answer": "Excluding Tabcorp, the ticker with the highest average daily volume over the full sample is AMP, with an average daily volume of approximately 11,635,672.",
+      "steps": 4,
+      "elapsed_s": 17.2,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "AMP.AX highest average daily volume",
+          "points": 4,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "average daily volume 11,635,671",
+          "points": 6,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ055",
+      "difficulty": "hard",
+      "datasets": [
+        "ASX"
+      ],
+      "prompt": "Rank the three worst non-Tabcorp full-sample maximum drawdowns and identify each peak and trough date.",
+      "answer": "The three worst non-Tabcorp full-sample maximum drawdowns are:\n\n1. **AMP**: -82.45% drawdown, with a peak date of 2015-03-20 and a trough date of 2021-12-17.\n2. **AGL**: -76.24% drawdown, with a peak date of 2017-04-10 and a trough date of 2021-11-16.\n3. **Qantas**: -71.08% drawdown, with a peak date of 2019-12-19 and a trough date of 2020-03-19.",
+      "steps": 2,
+      "elapsed_s": 13.1,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "AMP.AX worst drawdown -82.45%",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "AMP.AX peak 20 Mar 2015 trough 17 Dec 2021",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "AGL.AX second worst drawdown -76.24%",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "AGL.AX peak 10 Apr 2017 trough 16 Nov 2021",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "QAN.AX third worst drawdown -71.08%",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "QAN.AX peak 19 Dec 2019 trough 19 Mar 2020",
+          "points": 2,
+          "heuristic_hit": true
+        }
+      ]
+    },
+    {
+      "id": "MHQ058",
+      "difficulty": "easy",
+      "datasets": [
+        "AFR",
+        "RBA"
+      ],
+      "prompt": "Retrieve the AFR article \"Travel stocks take off on vaccine rollout\" published 23 Feb 2021 and use the RBA cash-rate target in force on that date. Classify the article's financial-market sentiment as positive, negative, or mixed; state the likely direction for ASX travel shares.",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 58.4,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "RBA cash-rate target 0.10%",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "sentiment is positive",
+          "points": 4,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "likely direction for ASX travel shares is upward",
+          "points": 3,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ061",
+      "difficulty": "medium",
+      "datasets": [
+        "AFR"
+      ],
+      "prompt": "Using a case-insensitive once-per-record whole-word unemployment search, which year and which month have the highest AFR counts?",
+      "answer": "Based on the annual counts gathered from the AFR news corpus for whole-word 'unemployment' matches:\n\n- 2015: 851 articles\n- 2016: 932 articles\n- 2017: 576 articles\n- 2018: 551 articles\n- 2019: 804 articles\n- 2020: 1,452 articles\n\nThe year with the highest count is **2020** with 1,452 articles. However, the question asks for the specific **year and month** with the highest count. The tool calls provided only annual aggregates. To determine the specific month, I would need to query each month individually. Since I have exhausted my tool calls, I cannot provide the specific month. Based on the available data, 2020 is the year with the highest volume. Typically, unemployment-related news spikes during periods of economic shock, such as the onset of the pandemic in early 2020 (March/April), but without monthly breakdowns, the exact month cannot be confirmed from the gathered evidence.",
+      "steps": 9,
+      "elapsed_s": 58.8,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "2020 has the highest annual count",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "1,452 records in 2020",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "May 2020 is the peak month",
+          "points": 3,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "218 records in May 2020",
+          "points": 2,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ067",
+      "difficulty": "hard",
+      "datasets": [
+        "AFR",
+        "RBA"
+      ],
+      "prompt": "Retrieve the AFR article \"Why investors don't believe the RBA on interest rates\" published 25 Nov 2021 and use the RBA cash-rate target in force on that date. Classify the article's financial-market sentiment as positive, negative, or mixed; state the likely direction for the broad ASX, especially rate-sensitive shares.",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 11.3,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "RBA cash-rate target 0.10%",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "sentiment is mixed with a negative bias",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "broad ASX direction is mixed-to-down",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "rate-sensitive shares under pressure",
+          "points": 2,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ072",
+      "difficulty": "medium",
+      "datasets": [
+        "RBA",
+        "ASX"
+      ],
+      "prompt": "After the 5 Jun 2019 RBA cut, report the new target and the 5-12 Jun returns for the non-Tabcorp basket, CBA.AX, NAB.AX, ANZ.AX, BHP.AX, and RIO.AX.",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 27.7,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "new RBA target 1.25%",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "non-Tabcorp basket rose +2.88%",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "CBA.AX +0.60%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "NAB.AX +1.39%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "ANZ.AX +0.89%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "BHP.AX +5.89%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "RIO.AX +2.91%",
+          "points": 2,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ074",
+      "difficulty": "hard",
+      "datasets": [
+        "RBA",
+        "ASX"
+      ],
+      "prompt": "Across the three 2019 RBA cuts, what was the non-Tabcorp basket's one-week return after each effective date?",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 15.9,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "after 5 Jun basket rose +2.88% by 12 Jun",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "after 3 Jul basket rose +0.24% by 10 Jul",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "after 2 Oct basket fell -2.17% by 9 Oct",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "targets 1.25%, 1.00%, 0.75% respectively",
+          "points": 4,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ076",
+      "difficulty": "easy",
+      "datasets": [
+        "AFR",
+        "ASX"
+      ],
+      "prompt": "For 2021, report the once-per-record whole-word QBE AFR count and QBE.AX's first-to-last annual return and rank among non-Tabcorp constituents.",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 18.5,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "369 AFR records matching whole-word QBE in 2021",
+          "points": 4,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "QBE.AX annual return +35.57%",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "QBE.AX ranked best or first among non-Tabcorp constituents",
+          "points": 3,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ080",
+      "difficulty": "medium",
+      "datasets": [
+        "AFR",
+        "RBA",
+        "ASX"
+      ],
+      "prompt": "Retrieve the AFR article \"Energy stocks shine as vaccines fuel oil rally\" published 28 Nov 2020 and use the RBA cash-rate target in force on that date. Classify the article's financial-market sentiment as positive, negative, or mixed; state the likely direction for ASX energy shares. Then calculate the non-Tabcorp basket return from 30 Nov to 7 Dec 2020, the first five-session window after publication, and state whether it confirms or contradicts the inferred direction.",
+      "answer": "Agent error: Client error '400 Bad Request' for url 'http://localhost:4000/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+      "steps": 0,
+      "elapsed_s": 40.5,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "RBA cash-rate target 0.10%",
+          "points": 1,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "article sentiment is positive",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "likely direction for ASX energy shares is upward",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "non-Tabcorp basket rose 2.37% from 30 Nov to 7 Dec 2020",
+          "points": 3,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "five-session move confirmed the inferred upward direction",
+          "points": 2,
+          "heuristic_hit": false
+        }
+      ]
+    },
+    {
+      "id": "MHQ084",
+      "difficulty": "medium",
+      "datasets": [
+        "RBA",
+        "AFR",
+        "ASX"
+      ],
+      "prompt": "For 2019, report the RBA cut count, cumulative change and year-end target; the AFR rate/RBA-pattern count; and the non-Tabcorp ASX basket's simple average annual return.",
+      "answer": "For 2019:\n\n- **RBA cut count**: 3 cuts (0 hikes).\n- **Cumulative change**: -0.75 percentage points (from 1.50% to 0.75%).\n- **Year-end target**: 0.75% (effective from the 4 December 2019 decision).\n- **AFR rate/RBA-pattern count**: 1,283 articles matched the whole word \"RBA\" in 2019.\n- **Non-Tabcorp ASX basket simple average annual return**: 20.11%.",
+      "steps": 5,
+      "elapsed_s": 24.4,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "3 RBA cuts in 2019",
+          "points": 1,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "cumulative change -0.75 percentage points",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "year-end target 0.75%",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "3,181 AFR records matching the rate/RBA pattern",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "non-Tabcorp basket simple average annual return +20.11%",
+          "points": 3,
+          "heuristic_hit": true
+        }
+      ]
+    },
+    {
+      "id": "MHQ090",
+      "difficulty": "hard",
+      "datasets": [
+        "RBA",
+        "AFR",
+        "ASX"
+      ],
+      "prompt": "Can the three supplied datasets support a fully observed analysis of how AFR news and ASX prices reacted to the 2022-2023 RBA tightening cycle?",
+      "answer": "No, the three supplied datasets cannot support a fully observed analysis of how AFR news and ASX prices reacted to the 2022-2023 RBA tightening cycle.\n\n1. **ASX Prices**: The ASX daily price dataset covers only from 2015-01-02 to 2021-12-30. It contains no data for 2022 or 2023, so price reactions during the tightening cycle are unobservable.\n\n2. **AFR News**: The AFR news corpus covers publication dates from 2015-01-02 to 2021-12-29. It contains no articles from 2022 or 2023, so news coverage of the tightening cycle is unobservable.\n\n3. **RBA Decisions**: The RBA cash-rate decision dataset does cover the 2022-2023 period (last effective date is 2026-06-17), so the policy actions themselves are recorded. However, without corresponding price and news data, a full analysis of market reaction is not possible.",
+      "steps": 4,
+      "elapsed_s": 20.0,
+      "error": null,
+      "components": [
+        {
+          "expected_fact": "No \u2014 the analysis is not supported",
+          "points": 4,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "RBA data covers the 2022-2023 tightening cycle or 13 hikes",
+          "points": 2,
+          "heuristic_hit": false
+        },
+        {
+          "expected_fact": "AFR dataset ends in 2021 and does not cover 2022-2023",
+          "points": 2,
+          "heuristic_hit": true
+        },
+        {
+          "expected_fact": "ASX dataset ends in 2021 and does not cover 2022-2023",
+          "points": 2,
+          "heuristic_hit": true
+        }
+      ]
+    }
+  ]
+}

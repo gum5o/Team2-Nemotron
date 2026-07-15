@@ -1,0 +1,13 @@
+# virtualenvs / caches
+.venv/
+__pycache__/
+*.pyc
+# large model weights & indexes — regenerable, too big for git
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.gguf
+tokenizer.json
+training/output/nemotron-sentiment-merged/
+data/afr.db

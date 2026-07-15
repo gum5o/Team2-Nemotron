@@ -1,0 +1,36 @@
+# Smoke-test config: identical to lora_config.yaml but a handful of steps
+# into a throwaway output dir, used only to validate the full pipeline
+# (masking -> training -> generation) before committing ~45 minutes of GPU
+# time to the real 100-step run. Not a submission artifact.
+
+base_model_path: /home/cognitivo/local-llm-setup/models/Llama-3.1-Nemotron-Nano-8B-v1
+output_dir: training/output/_smoketest
+
+train_file: training/data/lora/train.jsonl
+val_file: training/data/lora/val.jsonl
+
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  - gate_proj
+  - up_proj
+  - down_proj
+
+sequence_length: 512
+learning_rate: 5.0e-5
+max_steps: 8
+checkpoint_every: 8
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+warmup_ratio: 0.03
+weight_decay: 0.0
+seed: 0
+
+load_in_4bit: true
+bf16: true
+gradient_checkpointing: true
