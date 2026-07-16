@@ -3,7 +3,7 @@
   "team_id": "team-2",
   "team_name": "Team 2",
   "github_url": "https://github.com/gum5o/Team2-Nemotron",
-  "commit_sha": "36781618763963dc293af82c70956d91bd3695af",
+  "commit_sha": "8cee9939e751dcb51abfa9377f215346f082d81d",
   "agent": {
     "endpoint": "http://10.0.1.10:8080",
     "health_path": "/health",
