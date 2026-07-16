@@ -5,13 +5,13 @@
   "github_url": "https://github.com/gum5o/Team2-Nemotron",
   "commit_sha": "8cee9939e751dcb51abfa9377f215346f082d81d",
   "agent": {
-    "endpoint": "http://10.0.1.10:8080",
+    "endpoint": "http://172.20.122.59:8080",
     "health_path": "/health",
     "query_path": "/query",
     "timeout_seconds": 300
   },
   "model": {
-    "endpoint": "http://localhost:8001/v1",
+    "endpoint": "http://172.20.122.59:8001/v1",
     "model_name": "nemotron-8b-finance"
   }
 }
