@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "team_id": "team-2",
+  "team_name": "Team 2",
+  "github_url": "https://github.com/gum5o/Team2-Nemotron",
+  "commit_sha": "36781618763963dc293af82c70956d91bd3695af",
+  "agent": {
+    "endpoint": "http://10.0.1.10:8080",
+    "health_path": "/health",
+    "query_path": "/query",
+    "timeout_seconds": 300
+  },
+  "model": {
+    "endpoint": "http://localhost:8001/v1",
+    "model_name": "nemotron-8b-finance"
+  }
+}
