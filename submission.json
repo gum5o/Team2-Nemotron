@@ -5,7 +5,7 @@
   "github_url": "https://github.com/gum5o/Team2-Nemotron",
   "commit_sha": "8fbb3d5bf9fce31f6d743c584b9879f10f9f1b4c",
   "agent": {
-    "endpoint": "TODO: fill in once the agent is served behind a public endpoint",
+    "endpoint": "http://10.0.1.10:8080",
     "health_path": "/health",
     "query_path": "/query",
     "timeout_seconds": 300
